@@ -1,0 +1,192 @@
+@font-face {
+    font-family: 'Permanent Marker';
+    src: local('./fonts/PermanentMarker-Regular.ttf');
+}
+
+body{
+    background-color: ghostwhite;
+    width: 1280px;
+    height: auto;
+    border: black 1px solid;
+    margin: auto;
+    box-shadow: 2px 2px 8px black ;
+}
+div#corpo{
+    display: flex;
+    width: auto;
+}
+aside{
+    height: 650px;
+    width: 25%;
+    background-color: rgb(87, 86, 86);
+}
+section{
+    height: 650px;
+    width: 75%;
+    background-color:rgb(0, 153, 255);
+}
+label{
+    font-size: 30pt;
+    margin: 12px;
+    color: black;
+}
+label#placar{
+    color: white;
+    font-size: 35pt;
+    text-shadow: 4px 4px 4px black;
+}
+div#menuLateral{
+    height: auto;
+    margin-top: 25px;
+}
+div#placarJogo{
+    display: flex;
+    margin-top: 20px;
+}
+div.quadro{
+    border: black 1px solid;
+    background-color: white;
+    width: 100%;
+}
+label.jogador{
+    font-size: 15pt;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+#CgameMode{
+    display: flex;
+    justify-content: center;
+}
+
+input.btGameMode{
+    width: 120px;
+    height: 70px;
+    margin: 5px;
+    font-size: 1.1em;
+    border-color: rgb(0, 153, 255);
+}
+
+input#sp{
+    background-color: rgb(0, 153, 255);
+    border: white 2px solid;
+    color: white;
+}
+
+h2{
+    color: white;
+    margin: 20px 20px 15px 20px;
+    text-shadow: 1px 1px 1px  rgb(0, 153, 255);;
+    text-align:center;
+}
+
+
+input#btStart{
+    margin-top: 30%;
+    margin-left: 20%;
+    padding: 30px 70px;
+    font-size: 15pt;
+    font-weight: bold;
+}
+input#btStart:hover{
+    background-color: #ffffff;
+}
+div#historico{
+    background-color: ghostwhite;
+    width: 300px;
+    height: 80px;
+}
+div#btHistorico{
+    margin-left: 20px;
+    color: white;
+}
+div#btHistorico:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+div#titulo{
+    position: absolute;
+    font-family: 'Times new Roman';
+    font-size: 1pt;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+h1#tt1{
+    margin-left:  0px;
+}
+h1#tt2{
+    margin-left:  80px;
+}
+h1#tt3{
+    margin-left:  160px;
+}
+div#gameLog{
+    margin: auto;
+}
+h1{
+    font-size:  30pt;
+    text-align: center;
+}
+h1#log{
+    opacity: 1;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+input#btRestart{  /* centralizar botão*/
+    padding: 20px 70px;
+    margin-left: 390px;
+    margin-bottom: 5px;
+    border-radius: 20pt;
+    opacity: 0;
+    font-size: 15pt;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(87, 86, 86);
+}
+input#btRestart:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;    
+}
+
+
+div#container{
+    width: 334px;
+    height: 331px;
+    background-color: gray;
+    margin:auto;
+    margin-top: 100px;
+    display: flex;
+}
+div.posicao{
+    background-color: rgb(34, 211, 255);
+    height: 100px;
+    width: 100px;
+    border: black 4px solid;
+    margin: 1px;
+    background-position: center;
+    overflow: hidden;
+    background-size: 100px 100px;
+}
+div.posicao:hover{
+    background-color: rgb(13, 45, 221);
+    transition-duration: 0.6s;
+}
+div.coluna{
+    display: inline-block;
+}
+
+footer{
+    border-style: none;
+}
+
+footer p{
+    text-align: center
+}
+
+span{
+    font-style: italic;
+   
+}
+
+

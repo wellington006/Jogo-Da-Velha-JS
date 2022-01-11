@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link href="./css/estilo.css" rel="stylesheet"/>
+</head>
+<body>
+    
+    <div id="corpo">
+        <aside>
+            <input type="text" name="contadorDeJogadas" id="contador" value="11" hidden> <!--contador-->
+            <input type="text" id="txGameMode" value="S" hidden> <!--Modo de jogo-->
+            <div id="menuLateral">
+                <label id=placar>Placar</label><br>
+                <hr>
+
+                <div id="placarJogo">
+                    <div class="quadro">
+                        <label id="jogador1" class="jogador">Jogador 1</label><br>
+                        <label id="ptsJogador1" class="pts">0</label>
+                    </div>
+                    <div class="quadro">
+                        <label id="jogador2" class="jogador">Jogador 2</label><br>
+                        <label id="ptsJogador2" class= "pts">0</label>
+                    </div>
+                </div>
+                <div>
+                    <h2>Modo de jogo: </h2>
+                    <div  id="CgameMode">
+                        <input type="button" id="sp" class="btGameMode" value="Single Player" name="S" onclick="gameModeConfig('S')">
+                        <input type="button" id="mp" class="btGameMode" value="Multiplayer" name="M" onclick="gameModeConfig('M')">
+                    </div>
+                </div>
+                
+            </div>
+
+            <input type="submit" id="btStart" onclick="clickStart()" value="Start"/>
+            
+            <div id="btHistorico">
+                <p>Histórico</p>
+            </div>
+
+            <div style="display: flex;justify-content: center; align-items: center;">
+                <div id="historico" style="overflow-y: scroll;"> </div>
+            </div>
+
+            
+        </aside>
+    
+        <section>
+            <div id="titulo">
+                <h1 id="tt1">Jogo</h1>
+                <h1 id="tt2">Da</h1>
+                <h1 id="tt3">Velha</h1>
+            </div>
+            <div id="container" >
+                <div class="coluna">
+                    <div id="pos1" class="posicao" onclick="jogada('pos1')" pos></div>
+                    <div id="pos2" class="posicao" onclick="jogada('pos2')" pos></div>   
+                    <div id="pos3" class="posicao" onclick="jogada('pos3')" pos></div>
+                </div>
+                
+                <div class="coluna">
+                    <div id="pos4" class="posicao" onclick="jogada('pos4')" pos></div>
+                    <div id="pos5" class="posicao" onclick="jogada('pos5')" pos></div>
+                    <div id="pos6" class="posicao" onclick="jogada('pos6')" pos></div>
+                </div>
+
+                <div class="coluna">
+                    <div id="pos7" class="posicao" onclick="jogada('pos7')" pos></div>
+                    <div id="pos8" class="posicao" onclick="jogada('pos8')" pos></div>
+                    <div id="pos9" class="posicao" onclick="jogada('pos9')" pos></div>
+                </div>
+            </div>
+            <div id="pos0" class="posicao" onclick="jogada('pos0')" hidden></div> <!-- DIV para receber click para disparar jogada da IA -->
+            <div id="gameLog">
+                <h1 id="log">Clique em Start para começar!</h1>
+                <input type="submit" id="btRestart" value="Restart" onclick="resetarPosicoes()">
+            </div>
+        </section>
+        
+    </div>
+    <footer>
+        <p>Desenvolvido por <span>Wellington Souza</span></p>
+    </footer>
+    
+    <script src="./js/function_IA.js" type="text/javascript"></script>
+    
+</body>
+</html>
